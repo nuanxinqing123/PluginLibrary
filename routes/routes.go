@@ -17,6 +17,7 @@ import (
 
 func Setup() *gin.Engine {
 	// 创建服务
+	gin.SetMode(gin.ReleaseMode)
 	r := gin.Default()
 
 	// 前端静态文件
